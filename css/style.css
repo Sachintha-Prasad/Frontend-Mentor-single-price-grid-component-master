@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* font-family: 'Karla', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    width: min(90%, 70rem);
+    border-radius: 1rem;
+    overflow: hidden;
+
+    box-shadow: 0 1rem 2rem .2rem hsla(0, 0%, 30%, 0.26);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 4em;    
+    width: 100%;
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.header-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+
+.header-sub-title {
+    font-size: 2rem;
+    color: hsl(71, 73%, 54%);
+}
+
+.header-description {
+    color: hsl(218, 22%, 67%);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    width: min(90%, 60rem);
+}
+
+.article {
+    display: flex;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    background-color: hsl(179, 62%, 43%);
+    color:hsl(204, 43%, 93%);
+
+    padding: 4em;
+    width: 50%;
+}
+
+.col-1-title {
+    font-size: 2rem;
+}
+
+.price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.price h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.price p {
+    font-size: 1.4rem;
+    color: hsla(203, 44%, 93%, 0.582);
+}
+
+.subscription-description {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.sign-up {
+    background-color: hsl(71, 73%, 54%);
+    border-radius: .5rem;
+    color: hsl(0, 0%, 100%);
+    padding: 1em;
+    cursor: pointer;
+
+    box-shadow: 0 .2rem 1rem .1rem hsla(0, 0%, 30%, 0.26);
+}
+
+.col-2 {
+    background-color: hsl(179, 66%, 53%);
+    color:hsl(204, 43%, 93%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 4em;
+    width: 50%;
+}
+
+.col-2-title {
+    font-size: 2rem;
+}
+
+.col-2-description {
+    color: hsla(203, 44%, 93%, 0.788);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    width: min(90%, 20rem);
+}
+
+@media (max-width: 375px) {
+    .container {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .col-1 {
+        width: 100%;
+    }
+
+    .col-2 {
+        width: 100%;
+    }
+}
